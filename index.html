@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+	<title>Optimizing Google Webfont - Hongkiat.com</title>
+
+	<!--  jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../_nav/js/jquery.js"><\/script>')</script>
+
+	<!-- demo scripts / styles -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- nav script -->
+	<script src="../_nav/js/nav.js" type="text/javascript"></script>
+</head>
+<body>
+
+<!-- nav meta -->
+<div class="demo-meta">
+	<h1 class="demo-title">Optimizing Google Webfont</h1>
+	<p class="demo-desc">This demo shows how to optimize Google Web Fonts by subsetting the font set, specifying only certain font styles and using only certain font characters.</p>
+</div>
+
+<!-- demo content -->
+<div class="demo-wrapper google-webfont-optimized">
+
+	<section class="font-styles">
+		<h2>Using Certain Font Styles</h2>
+		<section class="google-webfont-sepcification">
+			<h3>Google Webfont Specification</h3>
+			<small>Below is the stylesheet link, which we added it in the &lt;head&gt; section</small>
+			<pre>
+&lt;link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'&gt;
+			</pre>
+		</section>
+
+		<section class="light">
+			<h3>Light</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<pre>
+.font-styles .light {
+	font-size: 1.25em;
+	font-weight: 300;
+
+	font-family: 'Roboto Condensed', sans-serif;;
+}
+			</pre>
+		</section>
+
+		<section class="normal">
+			<h3>Normal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua</p>
+
+			<pre>
+.font-styles .normal {
+	font-size: 1.25em;
+	font-weight: 400;
+
+	font-family: 'Roboto Condensed', sans-serif;;
+}
+			</pre>
+		</section>
+
+		<section class="bold">
+			<h3>Bold</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua</p>
+
+			<pre style="font-weight: normal;">
+.font-styles .bold {
+	font-size: 1.25em;
+	font-weight: 700;
+
+	font-family: 'Roboto Condensed', sans-serif;;
+}
+			</pre>
+		</section>
+	</section>
+</div>
+</body>
+</html>
+
